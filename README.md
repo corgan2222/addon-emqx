@@ -6,6 +6,7 @@
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
+![EMQX Version][emqx-version-shield]
 
 [![Github Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
@@ -63,7 +64,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2023-2025 Franck Nijhof
+Copyright (c) 2023-2026 Franck Nijhof
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -91,12 +92,13 @@ SOFTWARE.
 [corgan2222]: https://github.com/corgan2222
 [docs]: https://github.com/corgan2222/addon-emqx/blob/main/emqx/DOCS.md
 [emqx]: https://www.emqx.io/
+[emqx-version-shield]: https://img.shields.io/badge/EMQX-e5.10.3-blue.svg
 [frenck]: https://github.com/frenck
-[github-actions-shield]: https://github.com/corgan2222/addon-emqx/workflows/CI/badge.svg
+[github-actions-shield]: https://github.com/corgan2222/addon-emqx/actions/workflows/ci.yaml/badge.svg
 [github-actions]: https://github.com/corgan2222/addon-emqx/actions
 [issue]: https://github.com/corgan2222/addon-emqx/issues
 [license-shield]: https://img.shields.io/github/license/corgan2222/addon-emqx.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [releases-shield]: https://img.shields.io/github/release/corgan2222/addon-emqx.svg
 [releases]: https://github.com/corgan2222/addon-emqx/releases
