@@ -37,39 +37,74 @@ Home Assistant instance.
 The Enterprise Edition unlocks a significantly expanded feature set compared to
 the open-source version:
 
-### [Flow Designer][flow-designer]
+## Key Features
 
-Visual drag-and-drop editor to build data processing pipelines. Connect MQTT
-topics to external systems without writing code — wire up sources,
-transformations, and outputs in a browser-based canvas.
+EMQX delivers a powerful set of capabilities for modern connected systems:
 
-### [Rule Engine][rules]
+### Comprehensive Protocol Support
 
-SQL-based engine to filter, enrich, transform, and route IoT messages in
-real-time. Trigger actions based on topic patterns, payload values, or device
-events.
+- Full MQTT v5.0, v3.1.1, and v3.1 support.
+- [MQTT over QUIC](https://docs.emqx.com/en/emqx/latest/mqtt-over-quic/introduction.html): Leverage the benefits of QUIC for faster connection establishment, reduced head-of-line blocking, and seamless connection migration.
+- Support for other IoT protocols like [LwM2M](https://docs.emqx.com/en/emqx/latest/gateway/lwm2m.html), [CoAP](https://docs.emqx.com/en/emqx/latest/gateway/coap.html), [MQTT-SN](https://docs.emqx.com/en/emqx/latest/gateway/mqttsn.html), and more through [gateways](https://docs.emqx.com/en/emqx/latest/gateway/gateway.html).
 
-### [Data Integration — 40+ Connectors][connectors]
+### Massive Scalability & High Availability
 
-Push or pull data to/from external systems out of the box:
+- [Connect](https://www.emqx.com/en/solutions/iot-device-connectivity) 100M+ of concurrent MQTT clients with a single cluster.
+- [Process](https://www.emqx.com/en/solutions/reliable-mqtt-messaging) millions of messages per second with sub-millisecond latency.
+- [Masterless clustering](https://docs.emqx.com/en/emqx/latest/deploy/cluster/introduction.html) for high availability and fault tolerance.
+- Seamless global communication with [EMQX Cluster Linking](https://www.emqx.com/en/solutions/cluster-linking).
 
-- **Databases** — MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, InfluxDB,
-  TimescaleDB, Microsoft SQL Server, Oracle, Cassandra and more
-- **Message queues** — Apache Kafka, RabbitMQ, Apache Pulsar, RocketMQ
-- **Cloud services** — Amazon Kinesis, Amazon S3, Azure Event Hubs,
-  Azure Blob Storage, GCP Pub/Sub, Snowflake
-- **Other** — Elasticsearch, OpenTSDB, Apache IoTDB, HStreamDB
+### Powerful Rule Engine & Data Integration
 
-### [Webhooks][webhooks]
+- SQL-based [Rule Engine](https://www.emqx.com/en/solutions/mqtt-data-processing) to process, transform, enrich, and filter in-flight data.
+- Seamless data bridging and [integration](https://www.emqx.com/en/solutions/mqtt-data-integration) with 50+ cloud services and enterprise systems, including:
+  - **Message Queues**: [Kafka](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-kafka.html), [RabbitMQ](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-rabbitmq.html), [Pulsar](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-pulsar.html), [RocketMQ](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-rocketmq.html), etc.
+  - **Databases**: [PostgreSQL](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-pgsql.html), [MySQL](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-mysql.html), [MongoDB](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-mongodb.html), [Redis](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-redis.html), [ClickHouse](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-clickhouse.html), [InfluxDB](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-influxdb.html), etc.
+  - **Cloud Services**: [AWS Kinesis](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-kinesis.html), [GCP Pub/Sub](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-gcp-pubsub.html), [Azure Event](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-azure-event-hub.html), [Confluent Cloud](https://docs.emqx.com/en/emqx/latest/data-integration/confluent-sink.html),  and more.
+- [Webhook](https://docs.emqx.com/en/emqx/latest/data-integration/webhook.html) support for easy integration with custom services.
 
-Forward any MQTT message or device event to an external HTTP endpoint with
-flexible payload templating. No middleware required.
+### [Message Queue](https://docs.emqx.com/en/emqx/latest/message-queue/message-queue-concept.html)
 
-### [SSO, RBAC & Audit Logs][security]
+- Reliable message queuing for asynchronous and decoupled communication.
+- Extends MQTT with durable message storage, configurable queue lifecycle, TTL, and size limits, ensuring messages are preserved until consumption.
+- Supports load-balanced consumption and optional last-value semantics, allowing queues to retain only the most recent message for each topic when needed.
 
-- **Single Sign-On (SSO)** — integrate with your existing identity provider
-- **Role-Based Access Control (RBAC)** — fine-grained permissions per user
-- **Audit Logs** — full activity trail for compliance and debugging
+### [Flow Designer](https://docs.emqx.com/en/emqx/latest/flow-designer/introduction.html)
+
+- Drag‑and‑drop canvas to orchestrate real‑time data pipelines with zero code, using nodes for rules, integrations, and AI tasks.
+
+### [Smart Data Hub](https://docs.emqx.com/en/cloud/latest/data_hub/smart_data_hub.html)
+
+- [Schema Registry](https://docs.emqx.com/en/cloud/latest/data_hub/schema_registry.html): Define, store, and manage data schemas to ensure consistency.
+- [Schema Validation](https://docs.emqx.com/en/cloud/latest/data_hub/schema_validation.html): Validate incoming data against registered schemas to maintain data integrity.
+- [Message Transformation](https://docs.emqx.com/en/cloud/latest/data_hub/message_transformation.html): Convert data between different formats and structures to facilitate seamless integration.
+
+### [AI Processing & Integration](https://www.emqx.com/en/solutions/artificial-intelligence):
+
+- Native AI processing capabilities for IoT data streams.
+- Integration with popular AI services.
+- Support for AI-driven decision making at the edge or in the cloud.
+
+### Robust [Security](https://www.emqx.com/en/solutions/mqtt-security)
+
+- [Secure connections](https://docs.emqx.com/en/emqx/latest/network/overview.html) with TLS/SSL and WSS.
+- Flexible [authentication](https://docs.emqx.com/en/emqx/latest/access-control/authn/authn.html) mechanisms: username/password, JWT, PSK, X.509 certificates, etc.
+- Granular access control with [ACLs](https://docs.emqx.com/en/emqx/latest/access-control/authz/authz.html).
+- Integration with external authentication databases ([LDAP](https://docs.emqx.com/en/emqx/latest/access-control/authn/ldap.html), [SQL](https://docs.emqx.com/en/emqx/latest/access-control/authn/postgresql.html), [Redis](https://docs.emqx.com/en/emqx/latest/access-control/authn/redis.html)).
+
+### Advanced Observability & Management:
+
+- Comprehensive monitoring with [Prometheus](https://docs.emqx.com/en/emqx/latest/observability/prometheus.html), [Grafana](https://grafana.com/grafana/dashboards/17446-emqx/), [Datadog](https://docs.emqx.com/en/emqx/latest/observability/datadog.html), and [OpenTelemetry](https://docs.emqx.com/en/emqx/latest/observability/opentelemetry/opentelemetry.html).
+- Detailed logging and [tracing](https://docs.emqx.com/en/emqx/latest/observability/tracer.html) capabilities.
+- User-friendly [Dashboard](https://docs.emqx.com/en/emqx/latest/dashboard/introduction.html) for cluster overview and management.
+- Rich [HTTP API](https://docs.emqx.com/en/emqx/latest/admin/api.html) for automation and third-party integration.
+
+### Extensibility
+
+- [Plugin](https://docs.emqx.com/en/emqx/latest/extensions/plugins.html) architecture for extending functionality.
+- [Hooks](https://docs.emqx.com/en/emqx/latest/extensions/hooks.html) for customizing behavior at various points in the message lifecycle.
+
+
 
 ## Home Assistant MQTT Integration Setup
 
@@ -126,11 +161,28 @@ Want some more functionality to your Home Assistant instance?
 We have created multiple add-ons for Home Assistant. For a full list, check out
 our [GitHub Repository][repository].
 
-## License
+## EMQX Enterprise License
+
+### Important License Update
+
+Effective from version **5.9.0**, EMQX has transitioned from Apache 2.0 to the Business Source License (BSL) 1.1.
+
+### License Requirement for Clustering (v5.9.0+)
+
+Starting with EMQX v5.9.0, due to the license change and the unification of all features, deploying an EMQX cluster (more than 1 node) requires a license file to be loaded.
+
+Please refer to the following resources for details on license acquisition, application, and the specifics of the BSL 1.1.
+
+- **News**: [EMQX Adopts Business Source License](https://www.emqx.com/en/news/emqx-adopts-business-source-license)
+- **Blog**: [Adopting Business Source License to Accelerate MQTT and AI Innovation](https://www.emqx.com/en/blog/adopting-business-source-license-to-accelerate-mqtt-and-ai-innovation)
+- **FAQ**: [EMQX License FAQ](https://www.emqx.com/en/content/license-faq)
+
+## HA Addon License
 
 MIT License
 
 Copyright (c) 2023-2026 Franck Nijhof
+Update 2026 Stefan Knaak
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
