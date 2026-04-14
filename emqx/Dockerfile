@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base system
 ARG BUILD_ARCH=amd64
-ARG EMQX_VERSION="v5.9.0"
+ARG EMQX_VERSION="e5.10.3"
 RUN \
     apt-get update \
     && apt-get install -y --no-install-recommends \
@@ -17,7 +17,7 @@ RUN \
     && ARCH="${BUILD_ARCH}" \
     && if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="arm64"; fi \
     && curl -L -s \
-        "https://github.com/emqx/emqx/releases/download/${EMQX_VERSION}/emqx-${EMQX_VERSION#v}-debian13-${ARCH}.tar.gz" \
+        "https://github.com/emqx/emqx/releases/download/${EMQX_VERSION}/emqx-enterprise-${EMQX_VERSION#e}-debian13-${ARCH}.tar.gz" \
         | tar zxvf - -C /opt/emqx \
     && rm -fr \
         /opt/emqx/log \
