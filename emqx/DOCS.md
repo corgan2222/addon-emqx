@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: EMQX
+# Home Assistant Community Add-on: EMQX Enterprise
 
 [EMQX][emqx] is an Open-source MQTT broker with a high-performance real-time
 message processing engine, powering event streaming for IoT devices at massive
@@ -11,6 +11,8 @@ to configure, manage, and debug your MQTT broker, clients, and traffic.
 
 While EMQX sells their product mainly as a cloud hosted product on their
 website, this add-on runs EMQX in a fully local, self-hosted environment.
+
+This fork uses the **EMQX Enterprise Edition**.
 
 ## Installation
 
@@ -70,9 +72,9 @@ start of this chapter to get an idea of how the configuration looks.
 For more information about using these variables, see the official EMQX
 documentation:
 
-<https://www.emqx.io/docs/en/v5.0/admin/cfg.html>
+<https://docs.emqx.com/en/emqx/v5.10/>
 
-**Note**: _Only environment variables starting with `EMQX_` are accepted.\_
+**Note**: _Only environment variables starting with `EMQX_` are accepted._
 
 ## Known issues and limitations
 
@@ -100,24 +102,13 @@ based on the following:
 - `MINOR`: Backwards-compatible new features and enhancements.
 - `PATCH`: Backwards-compatible bugfixes and package updates.
 
-## Support
-
-Got questions?
-
-You have several options to get them answered:
-
-- The [Home Assistant Community Add-ons Discord chat server][discord] for add-on
-  support and feature requests.
-- The [Home Assistant Discord chat server][discord-ha] for general Home
-  Assistant discussions and questions.
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
-
 You could also [open an issue here][issue] GitHub.
 
 ## Authors & contributors
 
 The original setup of this repository is by [Franck Nijhof][frenck].
+
+The Enterprise Edition fork is maintained by [Stefan Knaak][corgan2222].
 
 For a full list of all authors and contributors,
 check [the contributor's page][contributors].
@@ -147,16 +138,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [addon-badge]: https://my.home-assistant.io/badges/supervisor_addon.svg
-[addon]: https://my.home-assistant.io/redirect/supervisor_addon/?addon=a0d7b954_emqx&repository_url=https%3A%2F%2Fgithub.com%2Fhassio-addons%2Frepository
-[contributors]: https://github.com/hassio-addons/addon-emqx/graphs/contributors
-[create-db]: https://github.com/hassio-addons/addon-influxdb/blob/main/influxdb/DOCS.md#integrating-into-home-assistant
-[discord-ha]: https://discord.gg/c5DvZ4e
-[discord]: https://discord.me/hassioaddons
+[addon]: https://my.home-assistant.io/redirect/supervisor_addon/?addon=a0d7b954_emqx&repository_url=https%3A%2F%2Fgithub.com%2Fcorgan2222%2Fhassio-addons_repository
+[contributors]: https://github.com/corgan2222/addon-emqx/graphs/contributors
+[corgan2222]: https://github.com/corgan2222
 [emqx]: https://www.emqx.io/
-[forum]: https://community.home-assistant.io/?u=frenck
 [frenck]: https://github.com/frenck
-[influxdb-addon]: https://github.com/hassio-addons/addon-influxdb
-[issue]: https://github.com/hassio-addons/addon-emqx/issues
-[reddit]: https://reddit.com/r/homeassistant
-[releases]: https://github.com/hassio-addons/addon-emqx/releases
+[issue]: https://github.com/corgan2222/addon-emqx/issues
+[releases]: https://github.com/corgan2222/addon-emqx/releases
 [semver]: https://semver.org/spec/v2.0.0.html
