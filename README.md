@@ -71,6 +71,35 @@ flexible payload templating. No middleware required.
 - **Role-Based Access Control (RBAC)** — fine-grained permissions per user
 - **Audit Logs** — full activity trail for compliance and debugging
 
+## Home Assistant MQTT Integration Setup
+
+After starting the add-on, create a dedicated MQTT user for Home Assistant
+before configuring the integration.
+
+### 1. Create an MQTT user in EMQX
+
+1. Open the EMQX web UI (via the **Open Web UI** button in the add-on)
+2. Log in with the default credentials: `admin` / `public`
+   _(change this password immediately under **System** → **Users**)_
+3. Go to **Access Control** → **Authentication**
+4. Select your authentication database and click **Add**
+5. Create a new user — e.g. username `homeassistant`, choose a strong password
+
+### 2. Configure Home Assistant MQTT integration
+
+In Home Assistant, go to **Settings** → **Devices & Services** → **Add Integration** → **MQTT** and enter:
+
+| Field | Value |
+|---|---|
+| Broker | `127.0.0.1` |
+| Port | `1883` |
+| Username | _(the user you just created)_ |
+| Password | _(the password you just set)_ |
+
+> **Note:** Use `127.0.0.1` because both Home Assistant and the EMQX add-on
+> run on the same host. External devices on your network should use your Home
+> Assistant's IP address instead.
+
 ## Contributing
 
 This is an active open-source project. We are always open to people who want to
