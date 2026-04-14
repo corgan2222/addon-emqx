@@ -60,7 +60,7 @@ EMQX delivers a powerful set of capabilities for modern connected systems:
 - Seamless data bridging and [integration](https://www.emqx.com/en/solutions/mqtt-data-integration) with 50+ cloud services and enterprise systems, including:
   - **Message Queues**: [Kafka](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-kafka.html), [RabbitMQ](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-rabbitmq.html), [Pulsar](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-pulsar.html), [RocketMQ](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-rocketmq.html), etc.
   - **Databases**: [PostgreSQL](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-pgsql.html), [MySQL](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-mysql.html), [MongoDB](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-mongodb.html), [Redis](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-redis.html), [ClickHouse](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-clickhouse.html), [InfluxDB](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-influxdb.html), etc.
-  - **Cloud Services**: [AWS Kinesis](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-kinesis.html), [GCP Pub/Sub](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-gcp-pubsub.html), [Azure Event](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-azure-event-hub.html), [Confluent Cloud](https://docs.emqx.com/en/emqx/latest/data-integration/confluent-sink.html),  and more.
+  - **Cloud Services**: [AWS Kinesis](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-kinesis.html), [GCP Pub/Sub](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-gcp-pubsub.html), [Azure Event](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-azure-event-hub.html), [Confluent Cloud](https://docs.emqx.com/en/emqx/latest/data-integration/confluent-sink.html), and more.
 - [Webhook](https://docs.emqx.com/en/emqx/latest/data-integration/webhook.html) support for easy integration with custom services.
 
 ![EMQX Rules](images/rules.png)
@@ -112,8 +112,6 @@ Rules Settings for Influx
 - [Plugin](https://docs.emqx.com/en/emqx/latest/extensions/plugins.html) architecture for extending functionality.
 - [Hooks](https://docs.emqx.com/en/emqx/latest/extensions/hooks.html) for customizing behavior at various points in the message lifecycle.
 
-
-
 ## Home Assistant MQTT Integration Setup
 
 After starting the add-on, create a dedicated MQTT user for Home Assistant
@@ -132,10 +130,10 @@ before configuring the integration.
 
 In Home Assistant, go to **Settings** → **Devices & Services** → **Add Integration** → **MQTT** and enter:
 
-| Field | Value |
-|---|---|
-| Broker | `127.0.0.1` |
-| Port | `1883` |
+| Field    | Value                         |
+| -------- | ----------------------------- |
+| Broker   | `127.0.0.1`                   |
+| Port     | `1883`                        |
 | Username | _(the user you just created)_ |
 | Password | _(the password you just set)_ |
 
