@@ -74,7 +74,7 @@ documentation:
 
 <https://docs.emqx.com/en/emqx/v5.10/>
 
-**Note**: _Only environment variables starting with `EMQX_` are accepted._
+**Note**: _Only environment variables starting with `EMQX_` are accepted.\_
 
 ## Known issues and limitations
 
