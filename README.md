@@ -218,7 +218,7 @@ SOFTWARE.
 [docs]: https://github.com/corgan2222/addon-emqx/blob/main/emqx/DOCS.md
 [emqx]: https://www.emqx.io/
 [emqx-releases]: https://github.com/emqx/emqx/releases/
-[emqx-version-shield]: https://img.shields.io/badge/EMQX-e5.10.3-blue.svg
+[emqx-version-shield]: https://img.shields.io/badge/EMQX-e5.10.4-blue.svg
 [flow-designer]: https://docs.emqx.com/en/emqx/v5.10/flow-designer/introduction.html
 [frenck]: https://github.com/frenck
 [github-actions-shield]: https://github.com/corgan2222/addon-emqx/actions/workflows/ci.yaml/badge.svg
