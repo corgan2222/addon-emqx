@@ -12,4 +12,5 @@ on:
 
 jobs:
   workflows:
-    uses: hassio-addons/workflows/.github/workflows/pr-labels.yaml@main
+    # hassio-addons/workflows v3.0.0
+    uses: hassio-addons/workflows/.github/workflows/pr-labels.yaml@383c10d83acbe341acbb35a4a61bfd14827f00f0
