@@ -11,6 +11,9 @@ jobs:
   workflows:
     # hassio-addons/workflows v3.0.0
     uses: hassio-addons/workflows/.github/workflows/addon-deploy.yaml@383c10d83acbe341acbb35a4a61bfd14827f00f0
+    permissions:
+      contents: read
+      packages: write
     with:
       repository: hassio-addons_repository
       repository_edge: hassio-addons_repository
